@@ -1,0 +1,31 @@
+basePath: /api/v1
+host: localhost:8080
+info:
+  contact: {}
+  description: This is a hello world API, with swagger annotations.
+  license:
+    name: Apache 2.0
+  title: Hello World API
+  version: "1.0"
+paths:
+  /hello:
+    get:
+      description: Gets the string "Hello World!"
+      responses:
+        "200":
+          description: ""
+      summary: Gets "Hello World!"
+  /hello/{name}:
+    get:
+      description: Gets the string "Hello {name}!"
+      parameters:
+      - description: Name of the person to say hello to
+        in: path
+        name: name
+        required: true
+        type: string
+      responses:
+        "200":
+          description: ""
+      summary: Gets "Hello {name}!"
+swagger: "2.0"

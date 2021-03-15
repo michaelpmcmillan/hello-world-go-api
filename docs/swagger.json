@@ -1,0 +1,47 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This is a hello world API, with swagger annotations.",
+        "title": "Hello World API",
+        "contact": {},
+        "license": {
+            "name": "Apache 2.0"
+        },
+        "version": "1.0"
+    },
+    "host": "localhost:8080",
+    "basePath": "/api/v1",
+    "paths": {
+        "/hello": {
+            "get": {
+                "description": "Gets the string \"Hello World!\"",
+                "summary": "Gets \"Hello World!\"",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/hello/{name}": {
+            "get": {
+                "description": "Gets the string \"Hello {name}!\"",
+                "summary": "Gets \"Hello {name}!\"",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Name of the person to say hello to",
+                        "name": "name",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    }
+}
