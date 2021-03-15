@@ -9,6 +9,7 @@ go get github.com/go-chi/chi
 go get github.com/go-chi/chi/middleware
 go get -u github.com/swaggo/swag/cmd/swag
 go get github.com/alecthomas/template
+go get github.com/joho/godotenv
 ```
 
 Whenever you make a code-change, regenerate the swagger docs.  Can we automate this on file save?
@@ -35,3 +36,4 @@ see
  - https://github.com/swaggo/swag
  - https://github.com/swaggo/swag#declarative-comments-format
  - https://github.com/alecthomas/template
+ - https://github.com/joho/godotenv

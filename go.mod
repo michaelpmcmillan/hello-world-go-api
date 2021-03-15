@@ -8,6 +8,7 @@ require (
 	github.com/go-chi/chi v4.1.2+incompatible // indirect
 	github.com/go-openapi/spec v0.20.3 // indirect
 	github.com/gorilla/mux v1.8.0 // indirect
+	github.com/joho/godotenv v1.3.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/swaggo/http-swagger v1.0.0 // indirect
